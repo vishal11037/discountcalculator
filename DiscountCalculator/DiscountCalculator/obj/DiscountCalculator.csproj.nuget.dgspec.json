@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vhaladi\\source\\repos\\DiscountCalculator\\DiscountCalculator\\DiscountCalculator.csproj": {}
+    "D:\\project\\discountcalculator\\DiscountCalculator\\DiscountCalculator\\DiscountCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vhaladi\\source\\repos\\DiscountCalculator\\DiscountCalculator\\DiscountCalculator.csproj": {
+    "D:\\project\\discountcalculator\\DiscountCalculator\\DiscountCalculator\\DiscountCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vhaladi\\source\\repos\\DiscountCalculator\\DiscountCalculator\\DiscountCalculator.csproj",
+        "projectUniqueName": "D:\\project\\discountcalculator\\DiscountCalculator\\DiscountCalculator\\DiscountCalculator.csproj",
         "projectName": "DiscountCalculator",
-        "projectPath": "C:\\Users\\vhaladi\\source\\repos\\DiscountCalculator\\DiscountCalculator\\DiscountCalculator.csproj",
+        "projectPath": "D:\\project\\discountcalculator\\DiscountCalculator\\DiscountCalculator\\DiscountCalculator.csproj",
         "packagesPath": "C:\\Users\\vhaladi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vhaladi\\source\\repos\\DiscountCalculator\\DiscountCalculator\\obj\\",
+        "outputPath": "D:\\project\\discountcalculator\\DiscountCalculator\\DiscountCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Z.Expressions.Eval": {
+              "target": "Package",
+              "version": "[4.0.71, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
