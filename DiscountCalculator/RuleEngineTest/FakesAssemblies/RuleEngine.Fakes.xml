@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RuleEngine.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:RuleEngine.Fakes.ShimRuleEngine">
+            <summary>Shim type of RuleEngine.RuleEngine</summary>
+        </member>
+        <member name="M:RuleEngine.Fakes.ShimRuleEngine.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:RuleEngine.Fakes.ShimRuleEngine.#ctor(RuleEngine.RuleEngine)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:RuleEngine.Fakes.ShimRuleEngine.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:RuleEngine.Fakes.ShimRuleEngine.AllInstances.EvaluateRulesIRulesListOfProducts">
+            <summary>Sets the Shim of RuleEngine.EvaluateRules(RuleEngine this, IRules rules, List`1 products)</summary>
+        </member>
+        <member name="M:RuleEngine.Fakes.ShimRuleEngine.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:RuleEngine.Fakes.ShimRuleEngine.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:RuleEngine.Fakes.ShimRuleEngine.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:RuleEngine.Fakes.ShimRuleEngine.Bind(RuleEngine.Interface.IRuleEngine)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:RuleEngine.Fakes.ShimRuleEngine.Constructor">
+            <summary>Sets the Shim of RuleEngine.RuleEngine(RuleEngine this)</summary>
+        </member>
+        <member name="P:RuleEngine.Fakes.ShimRuleEngine.EvaluateRulesIRulesListOfProducts">
+            <summary>Sets the Shim of RuleEngine.EvaluateRules(RuleEngine this, IRules rules, List`1 products)</summary>
+        </member>
+        <member name="T:RuleEngine.Fakes.StubRuleEngine">
+            <summary>Stub type of RuleEngine.RuleEngine</summary>
+        </member>
+        <member name="M:RuleEngine.Fakes.StubRuleEngine.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:RuleEngine.Fakes.StubRuleEngine.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:RuleEngine.Fakes.StubRuleEngine.InitializeStub">
+            <summary>Initializes a new instance of type StubRuleEngine</summary>
+        </member>
+        <member name="P:RuleEngine.Fakes.StubRuleEngine.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:RuleEngine.Fakes.StubRuleEngine.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:RuleEngine.Interface.Fakes.StubIRuleEngine">
+            <summary>Stub type of RuleEngine.Interface.IRuleEngine</summary>
+        </member>
+        <member name="M:RuleEngine.Interface.Fakes.StubIRuleEngine.#ctor">
+            <summary>Initializes a new instance of type StubIRuleEngine</summary>
+        </member>
+        <member name="F:RuleEngine.Interface.Fakes.StubIRuleEngine.EvaluateRulesIRulesListOfProducts">
+            <summary>Sets the stub of IRuleEngine.EvaluateRules(IRuleEngine this, IRules rules, List`1 products)</summary>
+        </member>
+        <member name="M:RuleEngine.Interface.Fakes.StubIRuleEngine.RuleEngine#Interface#IRuleEngine#EvaluateRules(RuleEngine.Interface.IRules,System.Collections.Generic.List{RuleEngine.Model.Products})">
+            <summary>Sets the Stub of IRuleEngine.EvaluateRules(IRuleEngine this, IRules rules, List`1 products)</summary>
+        </member>
+        <member name="T:RuleEngine.Interface.Fakes.StubIRules">
+            <summary>Stub type of RuleEngine.Interface.IRules</summary>
+        </member>
+        <member name="M:RuleEngine.Interface.Fakes.StubIRules.#ctor">
+            <summary>Initializes a new instance of type StubIRules</summary>
+        </member>
+        <member name="F:RuleEngine.Interface.Fakes.StubIRules.GetRules">
+            <summary>Sets the stub of IRules.GetRules(IRules this)</summary>
+        </member>
+        <member name="M:RuleEngine.Interface.Fakes.StubIRules.RuleEngine#Interface#IRules#GetRules">
+            <summary>Sets the Stub of IRules.GetRules(IRules this)</summary>
+        </member>
+        <member name="T:RuleEngine.Model.Fakes.ShimProducts">
+            <summary>Shim type of RuleEngine.Model.Products</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.ShimProducts.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.ShimProducts.#ctor(RuleEngine.Model.Products)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.ActualPriceGet">
+            <summary>Sets the Shim of Products.get_ActualPrice(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.ActualPriceSetDouble">
+            <summary>Sets the Shim of Products.set_ActualPrice(Products this, Double value)</summary>
+        </member>
+        <member name="T:RuleEngine.Model.Fakes.ShimProducts.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.ActualPriceGet">
+            <summary>Sets the Shim of Products.get_ActualPrice(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.ActualPriceSetDouble">
+            <summary>Sets the Shim of Products.set_ActualPrice(Products this, Double value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.DiscountPriceGet">
+            <summary>Sets the Shim of Products.get_DiscountPrice(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.DiscountPriceSetDouble">
+            <summary>Sets the Shim of Products.set_DiscountPrice(Products this, Double value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.FinalPriceGet">
+            <summary>Sets the Shim of Products.get_FinalPrice(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.FinalPriceSetDouble">
+            <summary>Sets the Shim of Products.set_FinalPrice(Products this, Double value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.IdGet">
+            <summary>Sets the Shim of Products.get_Id(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.IdSetInt32">
+            <summary>Sets the Shim of Products.set_Id(Products this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.NameGet">
+            <summary>Sets the Shim of Products.get_Name(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.NameSetString">
+            <summary>Sets the Shim of Products.set_Name(Products this, String value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.QuantityGet">
+            <summary>Sets the Shim of Products.get_Quantity(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.QuantitySetInt32">
+            <summary>Sets the Shim of Products.set_Quantity(Products this, Int32 value)</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.ShimProducts.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.ShimProducts.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.Constructor">
+            <summary>Sets the Shim of Products.Products(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.DiscountPriceGet">
+            <summary>Sets the Shim of Products.get_DiscountPrice(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.DiscountPriceSetDouble">
+            <summary>Sets the Shim of Products.set_DiscountPrice(Products this, Double value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.FinalPriceGet">
+            <summary>Sets the Shim of Products.get_FinalPrice(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.FinalPriceSetDouble">
+            <summary>Sets the Shim of Products.set_FinalPrice(Products this, Double value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.IdGet">
+            <summary>Sets the Shim of Products.get_Id(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.IdSetInt32">
+            <summary>Sets the Shim of Products.set_Id(Products this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.NameGet">
+            <summary>Sets the Shim of Products.get_Name(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.NameSetString">
+            <summary>Sets the Shim of Products.set_Name(Products this, String value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.QuantityGet">
+            <summary>Sets the Shim of Products.get_Quantity(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.QuantitySetInt32">
+            <summary>Sets the Shim of Products.set_Quantity(Products this, Int32 value)</summary>
+        </member>
+        <member name="T:RuleEngine.Model.Fakes.ShimRuleParam">
+            <summary>Shim type of RuleEngine.Model.RuleParam</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.ShimRuleParam.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.ShimRuleParam.#ctor(RuleEngine.Model.RuleParam)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.DiscountGet">
+            <summary>Sets the Shim of RuleParam.get_Discount(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.DiscountRuleGet">
+            <summary>Sets the Shim of RuleParam.get_DiscountRule(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.DiscountRuleSetString">
+            <summary>Sets the Shim of RuleParam.set_DiscountRule(RuleParam this, String value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.DiscountSetDouble">
+            <summary>Sets the Shim of RuleParam.set_Discount(RuleParam this, Double value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.FormulaGet">
+            <summary>Sets the Shim of RuleParam.get_Formula(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.FormulaSetString">
+            <summary>Sets the Shim of RuleParam.set_Formula(RuleParam this, String value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.GroupedWithGet">
+            <summary>Sets the Shim of RuleParam.get_GroupedWith(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.GroupedWithSetInt32">
+            <summary>Sets the Shim of RuleParam.set_GroupedWith(RuleParam this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.IdGet">
+            <summary>Sets the Shim of RuleParam.get_Id(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.IdSetInt32">
+            <summary>Sets the Shim of RuleParam.set_Id(RuleParam this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.IsActiveGet">
+            <summary>Sets the Shim of RuleParam.get_IsActive(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.IsActiveSetBoolean">
+            <summary>Sets the Shim of RuleParam.set_IsActive(RuleParam this, Boolean value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.IsGroupedGet">
+            <summary>Sets the Shim of RuleParam.get_IsGrouped(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.IsGroupedSetBoolean">
+            <summary>Sets the Shim of RuleParam.set_IsGrouped(RuleParam this, Boolean value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.ItemCountGet">
+            <summary>Sets the Shim of RuleParam.get_ItemCount(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.ItemCountSetInt32">
+            <summary>Sets the Shim of RuleParam.set_ItemCount(RuleParam this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.PriceGet">
+            <summary>Sets the Shim of RuleParam.get_Price(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.AllInstances.PriceSetDouble">
+            <summary>Sets the Shim of RuleParam.set_Price(RuleParam this, Double value)</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.ShimRuleParam.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.ShimRuleParam.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.Constructor">
+            <summary>Sets the Shim of RuleParam.RuleParam(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.DiscountGet">
+            <summary>Sets the Shim of RuleParam.get_Discount(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.DiscountRuleGet">
+            <summary>Sets the Shim of RuleParam.get_DiscountRule(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.DiscountRuleSetString">
+            <summary>Sets the Shim of RuleParam.set_DiscountRule(RuleParam this, String value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.DiscountSetDouble">
+            <summary>Sets the Shim of RuleParam.set_Discount(RuleParam this, Double value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.FormulaGet">
+            <summary>Sets the Shim of RuleParam.get_Formula(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.FormulaSetString">
+            <summary>Sets the Shim of RuleParam.set_Formula(RuleParam this, String value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.GroupedWithGet">
+            <summary>Sets the Shim of RuleParam.get_GroupedWith(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.GroupedWithSetInt32">
+            <summary>Sets the Shim of RuleParam.set_GroupedWith(RuleParam this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.IdGet">
+            <summary>Sets the Shim of RuleParam.get_Id(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.IdSetInt32">
+            <summary>Sets the Shim of RuleParam.set_Id(RuleParam this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.IsActiveGet">
+            <summary>Sets the Shim of RuleParam.get_IsActive(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.IsActiveSetBoolean">
+            <summary>Sets the Shim of RuleParam.set_IsActive(RuleParam this, Boolean value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.IsGroupedGet">
+            <summary>Sets the Shim of RuleParam.get_IsGrouped(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.IsGroupedSetBoolean">
+            <summary>Sets the Shim of RuleParam.set_IsGrouped(RuleParam this, Boolean value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.ItemCountGet">
+            <summary>Sets the Shim of RuleParam.get_ItemCount(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.ItemCountSetInt32">
+            <summary>Sets the Shim of RuleParam.set_ItemCount(RuleParam this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.PriceGet">
+            <summary>Sets the Shim of RuleParam.get_Price(RuleParam this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimRuleParam.PriceSetDouble">
+            <summary>Sets the Shim of RuleParam.set_Price(RuleParam this, Double value)</summary>
+        </member>
+        <member name="T:RuleEngine.Model.Fakes.StubProducts">
+            <summary>Stub type of RuleEngine.Model.Products</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.StubProducts.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.StubProducts.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.StubProducts.InitializeStub">
+            <summary>Initializes a new instance of type StubProducts</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.StubProducts.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.StubProducts.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:RuleEngine.Model.Fakes.StubRuleParam">
+            <summary>Stub type of RuleEngine.Model.RuleParam</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.StubRuleParam.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.StubRuleParam.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:RuleEngine.Model.Fakes.StubRuleParam.InitializeStub">
+            <summary>Initializes a new instance of type StubRuleParam</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.StubRuleParam.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.StubRuleParam.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

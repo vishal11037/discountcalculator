@@ -3,3 +3,8 @@
 ################################################################################
 
 /DiscountCalculator/.vs/DiscountCalculator/DesignTimeBuild
+/DiscountCalculator/RuleEngine/obj
+/DiscountCalculator/RuleEngineTest/bin/Debug/netcoreapp3.1
+/DiscountCalculator/RuleEngineTest/obj
+/DiscountCalculator/RuleEngine/bin/Debug/netcoreapp3.1
+/DiscountCalculator/.vs/DiscountCalculator/v16/TestStore/0

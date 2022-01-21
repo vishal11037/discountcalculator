@@ -1,0 +1,40 @@
+[
+  {
+    "Id": 1,
+    "Discount": 13.3,
+    "ItemCount": 3,
+    "DiscountRule": "quantity/3",
+    "IsActive": true,
+    "Price": 50,
+    "Formula": "ActualPrice-((DiscountPercentage * groupPrize)/100)"
+  },
+  {
+    "Id": 2,
+    "Discount": 25,
+    "ItemCount": 2,
+    "DiscountRule": "quantity/2",
+    "IsActive": true,
+    "Price": 30,
+    "Formula": "ActualPrice-((DiscountPercentage * groupPrize)/100)"
+  },
+  {
+    "Id": 3,
+    "Discount": 0,
+    "IsGrouped": true,
+    "GroupedWith": 4,
+    "DiscountRule": "(productCount-groupedProductCount)",
+    "IsActive": true,
+    "Price": 20,
+    "Formula": "ActualPrice * (productGroupCount)"
+  },
+  {
+    "Id": 4,
+    "Discount": 0,
+    "IsGrouped": true,
+    "GroupedWith": 3,
+    "DiscountRule": "(productCount + groupedProductCount)",
+    "IsActive": true,
+    "Price": 15,
+    "Formula": "ActualPrice * (productGroupCount)"
+  }
+]
