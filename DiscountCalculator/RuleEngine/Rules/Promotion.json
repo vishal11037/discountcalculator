@@ -22,7 +22,7 @@
     "Discount": 0,
     "IsGrouped": true,
     "GroupedWith": 4,
-    "DiscountRule": "(productCount-groupedProductCount)",
+    "DiscountRule": "(productCount < groupedProductCount ? 0 : (productCount - groupedProductCount))",
     "IsActive": true,
     "Price": 20,
     "Formula": "ActualPrice * (productGroupCount)"
@@ -32,9 +32,9 @@
     "Discount": 0,
     "IsGrouped": true,
     "GroupedWith": 3,
-    "DiscountRule": "(productCount + groupedProductCount)",
+    "DiscountRule": "(groupedProductCount > productCount ? productCount : (productCount + groupedProductCount))",
     "IsActive": true,
     "Price": 15,
-    "Formula": "ActualPrice * (productGroupCount)"
+    "Formula": "ActualPrice * (productCount + productGroupCount)"
   }
 ]
