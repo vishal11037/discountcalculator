@@ -28,7 +28,7 @@ namespace RuleEngine
                     {
                         var productCount = product.Quantity;
                         var groupedProductCount = products.FirstOrDefault(item => item.Id == applicableRule.GroupedWith)?.Quantity;
-                        var productGroupCount = Math.Abs(Eval.Execute<double>(
+                        var productGroupCount = Math.Abs(Eval.Execute<int>(
                                                 applicableRule.DiscountRule,
                                                 new
                                                 {
@@ -40,7 +40,8 @@ namespace RuleEngine
                             applicableRule.Formula,
                             new
                             {
-                                ActualPrice = product.ActualPrice,
+                                ActualPrice = applicableRule.Price,
+                                productCount= productCount,
                                 productGroupCount = productGroupCount
                             });
                         product.DiscountPrice = product.ActualPrice - product.FinalPrice;

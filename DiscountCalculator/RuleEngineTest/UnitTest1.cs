@@ -25,7 +25,7 @@ namespace RuleEngineTest
             var products = GetProducts(1, 1, 1, 0);
 
             IRuleEngine ruleEngine = new RuleEngine.RuleEngine();
-            ruleEngine.EvaluateRules(rules, products);
+            var result = ruleEngine.EvaluateRules(rules, products);
 
         }
 
@@ -57,6 +57,40 @@ namespace RuleEngineTest
                 }
             };
             var products = GetProducts(3, 5, 1, 1);
+
+            IRuleEngine ruleEngine = new RuleEngine.RuleEngine();
+            ruleEngine.EvaluateRules(rules, products);
+
+        }
+
+        [TestMethod]
+        public void ScenarioD()
+        {
+            IRules rules = new RuleEngine.Interface.Fakes.StubIRules()
+            {
+                GetRules = () =>
+                {
+                    return GetRuleScenario1();
+                }
+            };
+            var products = GetProducts(10, 5, 1, 2);
+
+            IRuleEngine ruleEngine = new RuleEngine.RuleEngine();
+            ruleEngine.EvaluateRules(rules, products);
+
+        }
+
+        [TestMethod]
+        public void ScenarioE()
+        {
+            IRules rules = new RuleEngine.Interface.Fakes.StubIRules()
+            {
+                GetRules = () =>
+                {
+                    return GetRuleScenario1();
+                }
+            };
+            var products = GetProducts(11, 6, 3, 1);
 
             IRuleEngine ruleEngine = new RuleEngine.RuleEngine();
             ruleEngine.EvaluateRules(rules, products);
