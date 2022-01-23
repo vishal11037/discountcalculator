@@ -15,9 +15,13 @@
         /// <value>The quantity.</value>
         public int Quantity { get; set; }
 
+        /// <summary>Gets or sets the product price.</summary>
+        /// <value>The product price.</value>
+        public double Price { get; set; }
+
         /// <summary>Gets or sets the actual price.</summary>
         /// <value>The actual price.</value>
-        public double ActualPrice { get; set; }
+        public double TotalPrice { get; set; }
 
         /// <summary>Gets or sets the discount price.</summary>
         /// <value>The discount price.</value>

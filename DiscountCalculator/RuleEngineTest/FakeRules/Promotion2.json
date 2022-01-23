@@ -1,22 +1,6 @@
 [
   {
     "Id": 1,
-    "Discount": 13.3,
-    "ItemCount": 3,
-    "DiscountRule": "Quantity/3",
-    "IsActive": true,
-    "Formula": "TotalPrice-((DiscountPercentage * GroupPrize)/100)"
-  },
-  {
-    "Id": 2,
-    "Discount": 25,
-    "ItemCount": 2,
-    "DiscountRule": "Quantity/2",
-    "IsActive": true,
-    "Formula": "TotalPrice-((DiscountPercentage * GroupPrize)/100)"
-  },
-  {
-    "Id": 3,
     "Discount": 0,
     "IsGrouped": true,
     "GroupedWith": 4,
@@ -25,10 +9,26 @@
     "Formula": "ProductPrice * (ProductGroupCount)"
   },
   {
+    "Id": 2,
+    "Discount": 10,
+    "ItemCount": 2,
+    "DiscountRule": "Quantity/2",
+    "IsActive": true,
+    "Formula": "TotalPrice-((DiscountPercentage * GroupPrize)/100)"
+  },
+  {
+    "Id": 3,
+    "Discount": 20,
+    "ItemCount": 3,
+    "DiscountRule": "Quantity/3",
+    "IsActive": true,
+    "Formula": "TotalPrice-((DiscountPercentage * GroupPrize)/100)"
+  },
+  {
     "Id": 4,
-    "Discount": 14.25,
+    "Discount": 10,
     "IsGrouped": true,
-    "GroupedWith": 3,
+    "GroupedWith": 1,
     "DiscountRule": "((ProductCount == 0 || GroupedProductCount == 0) ? 0 : (GroupedProductCount >= ProductCount ? ProductCount : (ProductCount - GroupedProductCount)))",
     "IsActive": true,
     "Formula": "(ProductCount >= GroupedProductCount ? ((ProductPrice * (ProductCount - GroupedProductCount)) + ((ProductGroupCount * (ProductPrice + GroupedProductPrice)) - ((ProductGroupCount * (ProductPrice + GroupedProductPrice)) * (DiscountPercentage / 100)))) : ((ProductCount *(ProductPrice + GroupedProductPrice)) - ((ProductCount * (ProductPrice + GroupedProductPrice)) * (DiscountPercentage / 100))))"

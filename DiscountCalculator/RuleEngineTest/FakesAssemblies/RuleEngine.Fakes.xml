@@ -88,20 +88,8 @@
         <member name="M:RuleEngine.Model.Fakes.ShimProducts.#ctor(RuleEngine.Model.Products)">
             <summary>Initializes a new shim for the given instance</summary>
         </member>
-        <member name="P:RuleEngine.Model.Fakes.ShimProducts.ActualPriceGet">
-            <summary>Sets the Shim of Products.get_ActualPrice(Products this)</summary>
-        </member>
-        <member name="P:RuleEngine.Model.Fakes.ShimProducts.ActualPriceSetDouble">
-            <summary>Sets the Shim of Products.set_ActualPrice(Products this, Double value)</summary>
-        </member>
         <member name="T:RuleEngine.Model.Fakes.ShimProducts.AllInstances">
             <summary>Define shims for all instances members</summary>
-        </member>
-        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.ActualPriceGet">
-            <summary>Sets the Shim of Products.get_ActualPrice(Products this)</summary>
-        </member>
-        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.ActualPriceSetDouble">
-            <summary>Sets the Shim of Products.set_ActualPrice(Products this, Double value)</summary>
         </member>
         <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.DiscountPriceGet">
             <summary>Sets the Shim of Products.get_DiscountPrice(Products this)</summary>
@@ -127,11 +115,23 @@
         <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.NameSetString">
             <summary>Sets the Shim of Products.set_Name(Products this, String value)</summary>
         </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.PriceGet">
+            <summary>Sets the Shim of Products.get_Price(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.PriceSetDouble">
+            <summary>Sets the Shim of Products.set_Price(Products this, Double value)</summary>
+        </member>
         <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.QuantityGet">
             <summary>Sets the Shim of Products.get_Quantity(Products this)</summary>
         </member>
         <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.QuantitySetInt32">
             <summary>Sets the Shim of Products.set_Quantity(Products this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.TotalPriceGet">
+            <summary>Sets the Shim of Products.get_TotalPrice(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.AllInstances.TotalPriceSetDouble">
+            <summary>Sets the Shim of Products.set_TotalPrice(Products this, Double value)</summary>
         </member>
         <member name="M:RuleEngine.Model.Fakes.ShimProducts.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
@@ -169,11 +169,23 @@
         <member name="P:RuleEngine.Model.Fakes.ShimProducts.NameSetString">
             <summary>Sets the Shim of Products.set_Name(Products this, String value)</summary>
         </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.PriceGet">
+            <summary>Sets the Shim of Products.get_Price(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.PriceSetDouble">
+            <summary>Sets the Shim of Products.set_Price(Products this, Double value)</summary>
+        </member>
         <member name="P:RuleEngine.Model.Fakes.ShimProducts.QuantityGet">
             <summary>Sets the Shim of Products.get_Quantity(Products this)</summary>
         </member>
         <member name="P:RuleEngine.Model.Fakes.ShimProducts.QuantitySetInt32">
             <summary>Sets the Shim of Products.set_Quantity(Products this, Int32 value)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.TotalPriceGet">
+            <summary>Sets the Shim of Products.get_TotalPrice(Products this)</summary>
+        </member>
+        <member name="P:RuleEngine.Model.Fakes.ShimProducts.TotalPriceSetDouble">
+            <summary>Sets the Shim of Products.set_TotalPrice(Products this, Double value)</summary>
         </member>
         <member name="T:RuleEngine.Model.Fakes.ShimRuleParam">
             <summary>Shim type of RuleEngine.Model.RuleParam</summary>
