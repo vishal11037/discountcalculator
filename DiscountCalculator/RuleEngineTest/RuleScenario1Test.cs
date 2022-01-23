@@ -144,6 +144,24 @@ namespace RuleEngineTest
         }
 
 
+        [TestMethod]
+        public void ScenarioH()
+        {
+            IRules rules = new RuleEngine.Interface.Fakes.StubIRules()
+            {
+                GetRules = () =>
+                {
+                    return GetRules();
+                }
+            };
+            var products = this.GetProducts(0, 0, 0, 0);
+
+            IRuleEngine ruleEngine = new RuleEngine.RuleEngine();
+            ruleEngine.EvaluateRules(rules, products);
+
+        }
+
+
 
         protected List<RuleParam> GetRules()
         {
